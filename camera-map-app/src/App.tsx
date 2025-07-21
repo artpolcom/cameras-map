@@ -89,6 +89,7 @@ function App() {
       data: generateCameraViewFeatureCollection(camerasRef.current),
     });
 
+    // Hlavní vrstva se záběry
     mapRef.current?.addLayer({
       id: 'field-of-view-layer',
       type: 'fill',
@@ -98,6 +99,19 @@ function App() {
         'fill-opacity': 0.4,
       },
     })
+
+    // Vrstva, která se zviditelní po té co uživatel vybere kameru 
+    mapRef.current?.addLayer({
+      id: 'camera-highlight-layer',
+      type: 'fill',
+      source: 'field-of-view',
+      paint: {
+        'fill-color': '#3399FF',
+        'fill-opacity': 0.5,
+        'fill-outline-color': '#0066CC'
+      },
+      filter: ['==', 'id', -1], 
+    });
   }
 
   useEffect(() => {
@@ -166,7 +180,7 @@ function App() {
           const { lng, lat } = e.lngLat;
           mapRef.current?.flyTo({
             center: [lng, lat],
-            zoom: 18
+            zoom: 15
           })
         }
       }
@@ -199,7 +213,7 @@ function App() {
     // Letíme k vybrané kameře na mapě
     mapRef.current?.flyTo({
       center: [camera.longitude, camera.latitude],
-      zoom: 20
+      zoom: 15
     })
   }
 
@@ -241,7 +255,7 @@ function App() {
       // Proletíme se blíž k čerstvě vytvořené kameře
       mapRef.current?.flyTo({
         center: [lng, lat],
-        zoom: 18
+        zoom: 15
       })
     };
 
@@ -294,12 +308,21 @@ function App() {
   const handleSelectCamera = (camera: Camera) => {
     setSelectedCamera(camera)
     selectedCameraRef.current = { ...camera };
+
+    const cameraId = camera?.id ?? -1;
+
+    // Zapneme filtr symbolizující výběr kamery
+    if (mapRef.current?.getLayer('camera-highlight-layer')) {
+    mapRef.current.setFilter('camera-highlight-layer', ['==', 'id', cameraId]);
+  }
   }
 
   // Zahodíme všechny neuložené změny
   const cancelCameraEdit = () => {
     setSelectedCamera(null);
     selectedCameraRef.current = null;
+    // Odstraníme vrstvu, která symbolizuje to, že kamera byla vybrána
+    mapRef.current?.setFilter('camera-highlight-layer', ['==', 'id', -1]);
     updateMapData(cameras, null);
   };
 
