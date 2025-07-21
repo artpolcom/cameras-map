@@ -1,0 +1,204 @@
+{
+    "cameras": [
+        {
+            "id": 1,
+            "name": "Olomouc - Horní náměstí",
+            "isActive": true,
+            "latitude": 49.593778,
+            "longitude": 17.250878,
+            "direction": 90,
+            "angle": 60,
+            "range": 100
+        },
+        {
+            "id": 2,
+            "name": "Olomouc - Dolní náměstí",
+            "isActive": true,
+            "latitude": 49.592150,
+            "longitude": 17.251200,
+            "direction": 180,
+            "angle": 50,
+            "range": 80
+        },
+        {
+            "id": 3,
+            "name": "Olomouc - Masarykova třída",
+            "isActive": false,
+            "latitude": 49.595620,
+            "longitude": 17.245890,
+            "direction": 270,
+            "angle": 45,
+            "range": 120
+        },
+        {
+            "id": 4,
+            "name": "Olomouc - Hlavní nádraží",
+            "isActive": true,
+            "latitude": 49.590120,
+            "longitude": 17.248760,
+            "direction": 45,
+            "angle": 70,
+            "range": 150
+        },
+        {
+            "id": 5,
+            "name": "Olomouc - Smetanovy sady",
+            "isActive": true,
+            "latitude": 49.594300,
+            "longitude": 17.253400,
+            "direction": 135,
+            "angle": 55,
+            "range": 90
+        },
+        {
+            "id": 6,
+            "name": "Olomouc - Tovární zóna",
+            "isActive": false,
+            "latitude": 49.587450,
+            "longitude": 17.262100,
+            "direction": 315,
+            "angle": 40,
+            "range": 200
+        },
+        {
+            "id": 7,
+            "name": "Olomouc - Palackého ulice",
+            "isActive": true,
+            "latitude": 49.591800,
+            "longitude": 17.247300,
+            "direction": 0,
+            "angle": 65,
+            "range": 110
+        },
+        {
+            "id": 8,
+            "name": "Olomouc - Univerzitní kampus",
+            "isActive": true,
+            "latitude": 49.595100,
+            "longitude": 17.259870,
+            "direction": 225,
+            "angle": 50,
+            "range": 85
+        },
+        {
+            "id": 9,
+            "name": "Olomouc - Švehlova ulice",
+            "isActive": false,
+            "latitude": 49.589670,
+            "longitude": 17.255430,
+            "direction": 120,
+            "angle": 60,
+            "range": 130
+        },
+        {
+            "id": 10,
+            "name": "Olomouc - Moravská filharmonie",
+            "isActive": true,
+            "latitude": 49.592780,
+            "longitude": 17.252670,
+            "direction": 60,
+            "angle": 45,
+            "range": 95
+        },
+        {
+            "id": 11,
+            "name": "Olomouc - Třída Svobody",
+            "isActive": true,
+            "latitude": 49.594450,
+            "longitude": 17.246230,
+            "direction": 300,
+            "angle": 55,
+            "range": 140
+        },
+        {
+            "id": 12,
+            "name": "Olomouc - Průmyslový park",
+            "isActive": false,
+            "latitude": 49.586320,
+            "longitude": 17.264890,
+            "direction": 180,
+            "angle": 70,
+            "range": 180
+        },
+        {
+            "id": 13,
+            "name": "Olomouc - Nábřeží Moravy",
+            "isActive": true,
+            "latitude": 49.593210,
+            "longitude": 17.249110,
+            "direction": 90,
+            "angle": 50,
+            "range": 100
+        },
+        {
+            "id": 14,
+            "name": "Olomouc - Jeremenkova ulice",
+            "isActive": true,
+            "latitude": 49.588900,
+            "longitude": 17.257890,
+            "direction": 270,
+            "angle": 60,
+            "range": 115
+        },
+        {
+            "id": 15,
+            "name": "Olomouc - Býkovice křižovatka",
+            "isActive": false,
+            "latitude": 49.580450,
+            "longitude": 17.241230,
+            "direction": 45,
+            "angle": 40,
+            "range": 160
+        },
+        {
+            "id": 16,
+            "name": "Olomouc - Lazecká ulice",
+            "isActive": true,
+            "latitude": 49.590780,
+            "longitude": 17.260450,
+            "direction": 135,
+            "angle": 65,
+            "range": 90
+        },
+        {
+            "id": 17,
+            "name": "Olomouc - Velkomoravská ulice",
+            "isActive": true,
+            "latitude": 49.592340,
+            "longitude": 17.243670,
+            "direction": 315,
+            "angle": 50,
+            "range": 125
+        },
+        {
+            "id": 18,
+            "name": "Olomouc - Tržnice",
+            "isActive": false,
+            "latitude": 49.591230,
+            "longitude": 17.251890,
+            "direction": 0,
+            "angle": 55,
+            "range": 105
+        },
+        {
+            "id": 19,
+            "name": "Olomouc - Sídliště Povel",
+            "isActive": true,
+            "latitude": 49.587890,
+            "longitude": 17.249450,
+            "direction": 225,
+            "angle": 60,
+            "range": 110
+        },
+        {
+            "id": 20,
+            "name": "Olomouc - Černovír most",
+            "isActive": true,
+            "latitude": 49.596780,
+            "longitude": 17.254230,
+            "direction": 90,
+            "angle": 45,
+            "range": 135
+        }
+    ]
+}
