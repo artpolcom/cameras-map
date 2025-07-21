@@ -20,7 +20,7 @@ export default function CameraEditor({
     onCommitEdit,
     cancelCameraEdit
 }: CameraEditorProps) {
-    // Stav, který určuje, zda se má vykreslit varování
+    // Lokální stav pro plynulejší úpravu kamery
     const [localCamera, setLocalCamera] = useState<Camera | null>(null);
 
     useEffect(() => {
