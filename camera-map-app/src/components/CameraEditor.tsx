@@ -165,7 +165,7 @@ export default function CameraEditor({
                     onClick={() => cancelCameraEdit()}
                     className="w-full bg-red-600 cursor-pointer hover:bg-red-700 px-4 py-2 text-white rounded font-medium flex items-center justify-center gap-2 transition-all duration-200"
                 >
-                    Vrátit
+                    Zrušit
                 </button>
             </div>
         </div>
